@@ -6,7 +6,7 @@ import datetime
 import shutil
 import git
 import Repo
-
+ 
 #Getting Information for Post
 title = raw_input('Title: ')
 content = raw_input('Content: ')
