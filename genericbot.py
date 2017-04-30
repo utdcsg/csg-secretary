@@ -5,7 +5,7 @@ import io
 import datetime
 import shutil
 import git
-import Repo
+from git import Repo
  
 #Getting Information for Post
 title = raw_input('Title: ')
@@ -34,3 +34,9 @@ dst = "/home/user/Documents/csg/csg-website/_posts/17S"
 shutil.move(src,dst)
 
 #Pushing .md file to git repo
+
+repo_dir = '/home/user/Documents/csg/csg-website/'
+repo = git.Repo(repo_dir)
+print repo.git.add('.')
+print repo.git.commit(m=fileName)
+print repo.git.push()
