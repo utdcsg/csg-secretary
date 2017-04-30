@@ -38,5 +38,5 @@ shutil.move(src,dst)
 repo_dir = '/home/user/Documents/csg/csg-website/'
 repo = git.Repo(repo_dir)
 print repo.git.add('.')
-print repo.git.commit(m=fileName)
+print repo.git.commit(m=title)
 print repo.git.push()
